@@ -10,9 +10,9 @@ export default function Employee() {
 
    const AddorUpdatEmploye = (employ)=>{
     if (employ.id) {
-        setEmployees(employees.map(e=>{
+        setEmployees(employees.map(e=>
             e.id === employ.id ? employ : e
-        }))
+        ))
     }
     else{
         const newEmploy = {
